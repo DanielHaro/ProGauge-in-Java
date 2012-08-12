@@ -1,0 +1,28 @@
+import java.*;
+//import java.sql.*;
+import java.lang.*;
+import java.util.*;
+
+public class DeviceHelper
+{
+
+public DeviceHelper()
+ {}
+
+
+public int testDataType(String testData)
+
+ {
+   try{
+        Float test = new Float(0);
+        test.parseFloat(testData);
+        return(0);
+      }
+       catch(NumberFormatException e)
+         {
+           return(1);
+         }
+ }
+
+
+}
